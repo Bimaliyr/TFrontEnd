@@ -1,0 +1,22 @@
+
+<div class="body">
+<br><br><br>
+<div class="table-wrapper-scroll-y pl-5 pr-5">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th scope="col" style="font-family: 'ZCOOL XiaoWei', sans-serif; font-weight:600; font-size: 32px ;">Customer Name</th>
+          <th scope="col" style="font-family: 'ZCOOL XiaoWei', sans-serif; font-weight:600; font-size: 32px ;">Email</th>
+          <th scope="col" style="font-family: 'ZCOOL XiaoWei', sans-serif; font-weight:600; font-size: 32px ;">Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers ">
+            <td scope="col" style="font-family: 'ZCOOL XiaoWei', sans-serif; padding-top: 100px;;text-align:center;font-weight:bold;" ><h3>{{ customer .firstName}}</h3></td>
+            <td scope="col" style="font-family: 'ZCOOL XiaoWei', sans-serif; padding-top: 100px;;text-align:center;font-weight:bold;"><h3>{{ customer .email}}</h3></td>
+            <td scope="col" style="font-family: 'ZCOOL XiaoWei', sans-serif; padding-top: 90px;font-weight:500;text-align:center;font-weight:bold;"><button type="button" class="btn btn-dark" (click)="editTable(table._id)" >Remove</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
